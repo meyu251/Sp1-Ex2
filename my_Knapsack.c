@@ -23,6 +23,7 @@ int main(){
     printf("enter the weights of the products:");
     for(i=0; i<5; i++){
         scanf("%d", &weights[i]);
+        printf();
     }
 
     
