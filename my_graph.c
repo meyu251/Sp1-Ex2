@@ -4,11 +4,13 @@
 #define N 10
 
 int main() {
+    
     char choose;
     scanf("%c",&choose);
     int mat [N][N];
     int d1,d2;
-    while(choose!='D' && choose!='EOF'){
+
+    while(choose!='D'){
         if(choose=='A'){
             CreateMatrix(mat);
         }
