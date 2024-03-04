@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include "my_mat.h"
+
+#define N 10
+
 int main() {
     char choose;
     scanf("%c",&choose);
-    int mat [10][10];
+    int mat [N][N];
     int d1,d2;
     while(choose!='D' && choose!='EOF'){
         if(choose=='A'){
