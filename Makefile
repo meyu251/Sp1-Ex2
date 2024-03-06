@@ -19,10 +19,10 @@ my_Knapsack: my_Knapsack.o
 
 #create o files:
 my_mat.o: my_mat.c my_mat.h
-	$(FLAGS) -fPIC -c my_mat.c -o my_mat.o
+	$(FLAGS) -c my_mat.c -o my_mat.o
 
 my_graph.o: my_graph.c my_mat.h
-	$(FLAGS) -fPIC -c my_graph.c -o my_graph.o
+	$(FLAGS) -c my_graph.c -o my_graph.o
 
 my_Knapsack.o: my_Knapsack.c
-	$(FLAGS) -fPIC -c my_Knapsack.c -o my_Knapsack.o
+	$(FLAGS) -c my_Knapsack.c -o my_Knapsack.o
