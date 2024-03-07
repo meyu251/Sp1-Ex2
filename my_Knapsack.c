@@ -14,7 +14,6 @@ int knapSack (int weights[], int values[] , int selected_bool[]){
             }
             else{
                 mat[i][j] = values[i-1]+mat[i-1][j-weights[i-1]];
-
             }
             }
 
