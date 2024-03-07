@@ -1,5 +1,6 @@
 #Define variables
-FLAGS = gcc -Wall -g
+CC = gcc
+FLAGS = -Wall -g
 
 .PHONY: all clean
 
@@ -11,18 +12,18 @@ clean:
 
 #create main file:
 my_graph: my_graph.o my_mat.o
-	$(FLAGS) -o my_graph my_graph.o my_mat.o
+	$(CC) $(FLAGS) -o my_graph my_graph.o my_mat.o
 
 my_Knapsack: my_Knapsack.o
-	$(FLAGS) -o my_Knapsack my_Knapsack.o
+	$(CC) $(FLAGS) -o my_Knapsack my_Knapsack.o
 
 
 #create o files:
 my_mat.o: my_mat.c my_mat.h
-	$(FLAGS) -c my_mat.c -o my_mat.o
+	$(CC) $(FLAGS) -c my_mat.c -o my_mat.o
 
 my_graph.o: my_graph.c my_mat.h
-	$(FLAGS) -c my_graph.c -o my_graph.o
+	$(CC) $(FLAGS) -c my_graph.c -o my_graph.o
 
 my_Knapsack.o: my_Knapsack.c
-	$(FLAGS) -c my_Knapsack.c -o my_Knapsack.o
+	$(CC) $(FLAGS) -c my_Knapsack.c -o my_Knapsack.o
